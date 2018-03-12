@@ -199,5 +199,5 @@ Installation boilerplate completed, Enjoy!/
 + **npm start**
 + start your local : [http://localhost:3000/](http://localhost:3000/)
 + or [http://localhost:8080/](http://localhost:8080/) if you doesn't set **port: 3000** in file config.
-+ **npm run build** for build your application with ***reduce file size***.
++ **npm run build** for build your application with ***reduce file size***.\
 Good bye, Thank you.
