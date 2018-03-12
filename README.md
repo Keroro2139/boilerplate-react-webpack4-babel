@@ -60,7 +60,7 @@ $ npm i -D clean-webpack-plugin
 > **webpack-merge** use for merge file *webpack.common.js* with *webpack.dev.js* and *webpack.prod.js*\
 > **clean-webpack-plugin** use for clean/remove 'dist' folder that you built before *npm start*\
 > **uglifyjs-webpack-plugin** use for ***Minification***\
-> *webpack ^v.4 can't use extract-text-webpack-plugin at now(March 2018)
+> *webpack ^v.4* can't use extract-text-webpack-plugin at now(March 2018)
 
 ### Loader.
 ```
@@ -195,7 +195,7 @@ Structure
 ```
 Then **import './style.scss'** at *index.js* file.
   
-Installation boilerplate completed, Enjoy!/
+Installation boilerplate completed, Enjoy!!!
 + **npm start**
 + start your local : [http://localhost:3000/](http://localhost:3000/)
 + or [http://localhost:8080/](http://localhost:8080/) if you doesn't set **port: 3000** in file config.
