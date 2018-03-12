@@ -1,10 +1,10 @@
 # boilerplate by Weerapat Chulaket, March 2018.
 ### Create **root** folder and following below.
-  This below command for initial npm when you use **npm install ...**.
+  This below command for initial npm when you use **npm install ...**
 ```
 npm init -y
 ```
-### Create 'dist'(folder name) folder for 'index.html'
+### Create 'dist'(folder name) folder for 'index.html'.
 ```
 mkdir dist
 cd dist
@@ -12,13 +12,14 @@ touch index.html
 ```
 if you have problem with **touch** command, you can create folder and file by manual.
 
-### First, install webpack
+### First, install webpack.
 ```
 npm i -D webpack webpack-dev-server webpack-cli
 ```
-> npm **install --save-dev** can use **i** and **-D-  
+npm **install --save-dev** can use **i** and **-D***.
 
-
+### In package.json file.
+```
 // package.json
 ...
 "scripts": {
@@ -26,7 +27,13 @@ npm i -D webpack webpack-dev-server webpack-cli
   ...
 },
 ...
+```
+### Create webpack.config.js file in root folder.
+```
 $ touch webpack.config.js
+```
+Copy below and paste into **webpack.config.js** file
+```
 // webpack.config.js
 module.exports = {
   entry: [
@@ -41,6 +48,7 @@ module.exports = {
     contentBase: './dist'
   }
 };
+```
 
 $ mkdir src
 $ cd src
