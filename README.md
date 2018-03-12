@@ -1,4 +1,5 @@
-# boilerplate-react-webpack4-babel
+# boilerplate by Weerapat Chulaket, March 2018.
+## Create folder and following below.
 $ npm init -y
 $ mkdir dist
 $ cd dist
