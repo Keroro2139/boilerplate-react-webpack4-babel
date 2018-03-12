@@ -1,10 +1,13 @@
 # boilerplate by Weerapat Chulaket, March 2018.
 ## Create folder and following below.
-$ npm init -y
-$ mkdir dist
-$ cd dist
-$ touch index.html
-$ npm i -D webpack webpack-dev-server webpack-cli
+```
+npm init -y
+
+mkdir dist
+cd dist
+touch index.html
+npm i -D webpack webpack-dev-server webpack-cli
+```
 
 // package.json
 ...
