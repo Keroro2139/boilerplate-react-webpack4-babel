@@ -84,3 +84,5 @@ devServer: {
     contentBase: './dist',
     hot: true
   }
+
+$ npm i react-redux redux redux-thunk redux-promise redux-logger -s
