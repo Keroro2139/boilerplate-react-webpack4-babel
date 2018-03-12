@@ -16,7 +16,7 @@ if you have problem with **touch** command, you can create folder and file by ma
 ```
 npm i -D webpack webpack-dev-server webpack-cli
 ```
-npm **install --save-dev** can use **i** and **-D***.
+npm **install --save-dev** can use **i** and **-D**.
 
 ### In package.json file.
 ```
