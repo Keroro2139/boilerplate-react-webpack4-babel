@@ -1,13 +1,18 @@
 # boilerplate by Weerapat Chulaket, March 2018.
-## Create folder and following below.
+### Create **root** folder and following below.
 ```
 npm init -y
-
+```
+### Create 'dist'(folder name) folder for 'index.html'
+```
 mkdir dist
 cd dist
 touch index.html
-npm i -D webpack webpack-dev-server webpack-cli
 ```
+> if you have problem with **touch**, you can manual create folder and file.
+
+npm i -D webpack webpack-dev-server webpack-cli
+
 
 // package.json
 ...
