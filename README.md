@@ -177,3 +177,19 @@ module.exports = merge(common, {
     ]
 });
 ```
+### Style.scss
+Structure
+```
+- dev
+-- index.js
+-- style.scss // <-- create style file here
+- node_modules
+- src
+-- index.template.html
+- .babelrc
+- package.json
+- package-lock.json
+- webpack.common.js
+- webpack.dev.js
+- webpack.prod.js
+```
