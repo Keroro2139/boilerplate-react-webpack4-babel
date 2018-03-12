@@ -9,7 +9,7 @@ mkdir dist
 cd dist
 touch index.html
 ```
-> if you have problem with **touch**, you can manual create folder and file.
+###### if you have problem with **touch**, you can manual create folder and file.
 
 npm i -D webpack webpack-dev-server webpack-cli
 
