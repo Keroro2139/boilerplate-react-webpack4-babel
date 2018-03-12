@@ -57,7 +57,7 @@ $ npm i -D webpack-merge
 $ npm i -D uglifyjs-webpack-plugin
 $ npm i -D clean-webpack-plugin
 ```
-**webpack-merge** use for merge file *webpack.common.js* with *webpack.dev.js* and *webpack.prod.js*
-**clean-webpack-plugin** use for clean/remove 'dist' folder that you built before *npm start*
-**uglifyjs-webpack-plugin** use for ***Minification***
+> **webpack-merge** use for merge file *webpack.common.js* with *webpack.dev.js* and *webpack.prod.js*
+> **clean-webpack-plugin** use for clean/remove 'dist' folder that you built before *npm start*
+> **uglifyjs-webpack-plugin** use for ***Minification***
 
