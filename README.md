@@ -1,11 +1,11 @@
 # boilerplate-react-webpack4-babel
-$ npm init -y
-$ mkdir dist
-$ cd dist
-$ touch index.html
-$ npm i -D webpack webpack-dev-server webpack-cli
+#$ npm init -y
+#$ mkdir dist
+#$ cd dist
+#$ touch index.html
+#$ npm i -D webpack webpack-dev-server webpack-cli
 
-// package.json
+#// package.json
 ...
 "scripts": {
   "start": "webpack-dev-server --config ./webpack.config.js --mode development",
