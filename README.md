@@ -59,5 +59,16 @@ $ npm i -D clean-webpack-plugin
 ```
 > **webpack-merge** use for merge file *webpack.common.js* with *webpack.dev.js* and *webpack.prod.js*\
 > **clean-webpack-plugin** use for clean/remove 'dist' folder that you built before *npm start*\
-> **uglifyjs-webpack-plugin** use for ***Minification***
+> **uglifyjs-webpack-plugin** use for ***Minification***\
+> *webpack ^v.4 can't use extract-text-webpack-plugin at now(March 2018)
 
+### Loader.
+```
+$ npm i -D sass-loader node-sass
+$ npm i -D css-loader file-loader style-loader
+```
+### Webpack config files.
+Create 3 files in root folder
++ webpack.common.js
++ webpack.dev.js
++ webpack.prod.js
