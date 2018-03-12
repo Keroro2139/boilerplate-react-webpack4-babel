@@ -12,7 +12,7 @@ touch index.html
 ```
 if you have problem with **touch** command, you can create folder and file by manual.
 
-### First, install webpack.
+### First, install Webpack.
 ```
 npm i -D webpack webpack-dev-server webpack-cli
 ```
@@ -49,14 +49,21 @@ module.exports = {
   }
 };
 ```
-
+### Create 'src' folder for 'index.js' in root folder.
+```
 $ mkdir src
 $ cd src
 $ touch index.js
+```
+### Second, install Babel.
+Babal is made a new version as javascript to version that all browser can compile.
+```
 $ npm i -D babel-core babel-loader babel-preset-env
 $ npm i -D babel-preset-stage-2
 $ npm i -D babel-preset-react
-
+```
+In **package.json** file add this below.
+```
 // package.json
 "babel": {
   "presets": [
@@ -65,7 +72,9 @@ $ npm i -D babel-preset-react
     "stage-2"
   ]
 },
-
+```
+In **webpack.config.js** add this below.
+```
 // webpack.config.js
 module: {
     rules: [
@@ -79,7 +88,7 @@ module: {
   resolve: {
     extensions: ['*', '.js', '.jsx']
   },
-
+```
 $ touch .babelrc
 
 // .babelrc
