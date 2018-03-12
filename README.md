@@ -2,19 +2,19 @@
 ### Create **root** folder and following below.
   This below command for initial npm when you use **npm install ...**
 ```
-npm init -y
+$ npm init -y
 ```
 ### Create 'dist'(folder name) folder for 'index.html'.
 ```
-mkdir dist
-cd dist
-touch index.html
+$ mkdir dist
+$ cd dist
+$ touch index.html
 ```
 if you have problem with **touch** command, you can create folder and file by manual.
 
 ### First, install Webpack.
 ```
-npm i -D webpack webpack-dev-server webpack-cli
+$ npm i -D webpack webpack-dev-server webpack-cli
 ```
 npm **install --save-dev** can use **i** and **-D**.
 
@@ -115,8 +115,10 @@ $ npm i -s react react-dom
 $ npm i -D react-hot-loader
 $ npm i react-redux redux redux-thunk redux-promise redux-logger -s
 ```
-
+In **webpack.config.js** add and update this below.
+```
 // webpack.config.js
+
 entry: [
     'react-hot-loader/patch',
     './src/index.js'
@@ -127,6 +129,8 @@ plugins: [
 devServer: {
     contentBase: './dist',
     hot: true
-  }
+}
+```
+> use ***npm start*** and let develop your application with your's local server at [http://localhost:8080/](http://localhost:8080/)
 
 
