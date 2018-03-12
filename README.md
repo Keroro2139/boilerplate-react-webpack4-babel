@@ -29,6 +29,10 @@ npm **install --save-dev** can use **i** and **-D**.
 },
 ...
 ```
+### Install html-webpack-plugin.
+```
+$ npm i -D html-webpack-plugin
+```
 ### Create webpack.config.js file in root folder.
 ```
 $ touch webpack.config.js
@@ -37,17 +41,47 @@ Copy below and paste into **webpack.config.js** file
 ```
 // webpack.config.js
 
+const path = require('path');
+const webpack = require('webpack');
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+
 module.exports = {
   entry: [
-    './src/index.js'
+    'react-hot-loader/patch',
+    path.resolve('./dev/index.js')
   ],
+  mode: 'development',
+  module: {
+    rules: [
+      {
+        test: /\.(js|jsx)$/,
+        exclude: /node_modules/,
+        use: ['babel-loader']
+      }
+    ]
+  },
+  resolve: {
+    extensions: ['*', '.js', '.jsx']
+  },
   output: {
-    path: __dirname + '/dist',
-    publicPath: '/',
+    path: path.resolve('./dist'),
+    publicPath: '/dist',
     filename: 'bundle.js'
   },
+  plugins: [
+    new webpack.HotModuleReplacementPlugin(),
+    new HtmlWebpackPlugin({
+      hash: true,
+      title: 'Google Maps',
+      template: path.resolve('src/index.template.html'),
+      filename: 'index.html',
+      inject: 'body'
+    })
+  ],
   devServer: {
-    contentBase: './dist'
+    contentBase: './dist',
+    hot: true,
+    port: 3000
   }
 };
 ```
@@ -76,23 +110,6 @@ In **package.json** file add this below.
   ]
 },
 ```
-In **webpack.config.js** add this below.
-```
-// webpack.config.js
-
-module: {
-    rules: [
-      {
-        test: /\.(js|jsx)$/,
-        exclude: /node_modules/,
-        use: ['babel-loader']
-      }
-    ]
-  },
-  resolve: {
-    extensions: ['*', '.js', '.jsx']
-  },
-```
 ### Create '.babelrc' file in root folder.
 ```
 $ touch .babelrc
@@ -115,22 +132,5 @@ $ npm i -s react react-dom
 $ npm i -D react-hot-loader
 $ npm i react-redux redux redux-thunk redux-promise redux-logger -s
 ```
-In **webpack.config.js** add and update this below.
-```
-// webpack.config.js
-
-entry: [
-    'react-hot-loader/patch',
-    './src/index.js'
-  ],
-plugins: [
-    new webpack.HotModuleReplacementPlugin()
-  ],
-devServer: {
-    contentBase: './dist',
-    hot: true
-}
-```
-> use ***npm start*** and let develop your application with your's local server at [http://localhost:8080/](http://localhost:8080/)
 
 
