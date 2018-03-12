@@ -7,7 +7,7 @@ import promise from 'redux-promise';
 import logger from 'redux-logger';
 
 import allReducers from './reducers';
-import App from './components/App';
+import AppContainer from './containers/AppContainer';
 
 const store = createStore(
     allReducers,
@@ -16,7 +16,7 @@ const store = createStore(
 
 ReactDOM.render(
     <Provider store={store}>
-        <App />
+        <AppContainer />
     </Provider>,
     document.querySelector('#root')
 )
