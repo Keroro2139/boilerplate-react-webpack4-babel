@@ -21,6 +21,7 @@ npm **install --save-dev** can use **i** and **-D**.
 ### In package.json file.
 ```
 // package.json
+
 ...
 "scripts": {
   "start": "webpack-dev-server --config ./webpack.config.js --mode development",
@@ -35,6 +36,7 @@ $ touch webpack.config.js
 Copy below and paste into **webpack.config.js** file
 ```
 // webpack.config.js
+
 module.exports = {
   entry: [
     './src/index.js'
@@ -65,6 +67,7 @@ $ npm i -D babel-preset-react
 In **package.json** file add this below.
 ```
 // package.json
+
 "babel": {
   "presets": [
     "env",
@@ -76,6 +79,7 @@ In **package.json** file add this below.
 In **webpack.config.js** add this below.
 ```
 // webpack.config.js
+
 module: {
     rules: [
       {
@@ -89,9 +93,14 @@ module: {
     extensions: ['*', '.js', '.jsx']
   },
 ```
+### Create '.babelrc' file in root folder.
+```
 $ touch .babelrc
-
+```
+In **.babelrc** add this below.
+```
 // .babelrc
+
 {
   "presets": [
     "env",
@@ -99,9 +108,13 @@ $ touch .babelrc
     "stage-2"
   ]
 }
-
+```
+### Third, install React and Redux.
+```
 $ npm i -s react react-dom
 $ npm i -D react-hot-loader
+$ npm i react-redux redux redux-thunk redux-promise redux-logger -s
+```
 
 // webpack.config.js
 entry: [
@@ -116,4 +129,4 @@ devServer: {
     hot: true
   }
 
-$ npm i react-redux redux redux-thunk redux-promise redux-logger -s
+
