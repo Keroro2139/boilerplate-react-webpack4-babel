@@ -193,3 +193,11 @@ Structure
 - webpack.dev.js
 - webpack.prod.js
 ```
+Then **import './style.scss'** at *index.js* file.
+  
+Installation boilerplate completed, Enjoy!/
++ **npm start**
++ start your local : [http://localhost:3000/](http://localhost:3000/)
++ or [http://localhost:8080/](http://localhost:8080/) if you doesn't set port in file config.
++ **npm run build** for build your application with ***reduce file size***.
+Good bye, Thank you.
