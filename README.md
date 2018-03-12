@@ -1,5 +1,6 @@
 # boilerplate by Weerapat Chulaket, March 2018.
 ### Create **root** folder and following below.
+  This below command for initial npm when you use **npm install ...**.
 ```
 npm init -y
 ```
@@ -9,10 +10,13 @@ mkdir dist
 cd dist
 touch index.html
 ```
-> if you have problem with **touch** command, you can manual create folder and file.
+if you have problem with **touch** command, you can create folder and file by manual.
 
-
+### First, install webpack
+```
 npm i -D webpack webpack-dev-server webpack-cli
+```
+> npm **install --save-dev** can use **i** and **-D-  
 
 
 // package.json
