@@ -48,7 +48,7 @@ module.exports = {
         extensions: ['*', '.js', '.jsx']
     },
     output: {
-        filename: 'bundle.js',
+        filename: 'bundle.min.js',
         path: path.resolve(__dirname, 'dist')
     },
     plugins: [
