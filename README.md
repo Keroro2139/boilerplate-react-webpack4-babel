@@ -56,6 +56,7 @@ $ npm i -D html-webpack-plugin
 $ npm i -D webpack-merge
 $ npm i -D uglifyjs-webpack-plugin
 $ npm i -D clean-webpack-plugin
+$ npm i -D webpack-visualizer-plugin
 ```
 > **webpack-merge** use for merge file *webpack.common.js* with *webpack.dev.js* and *webpack.prod.js*\
 > **clean-webpack-plugin** use for clean/remove 'dist' folder that you built before *npm start*\
@@ -164,6 +165,7 @@ const webpack = require('webpack');
 const merge = require('webpack-merge');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 const common = require('./webpack.common.js');
+const Visualizer = require('webpack-visualizer-plugin');
 
 module.exports = merge(common, {
     devtool: 'source-map',
@@ -173,7 +175,10 @@ module.exports = merge(common, {
         }),
         new webpack.DefinePlugin({
             'process.env.NODE_ENV': JSON.stringify('production')
-        })
+        }),
+        new Visualizer({
+            filename: './statistics.html'
+        }),
     ]
 });
 ```
