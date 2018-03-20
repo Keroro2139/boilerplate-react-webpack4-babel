@@ -56,7 +56,7 @@ module.exports = {
         new webpack.HotModuleReplacementPlugin(),
         new HtmlWebpackPlugin({
             hash: true,
-            title: 'Google Maps',
+            title: 'React Boilderplate',
             template: path.resolve('src/index.template.html'),
             filename: 'index.html',
             inject: 'body'
