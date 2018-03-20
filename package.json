@@ -9,7 +9,7 @@
     "build": "webpack --config  webpack.prod.js"
   },
   "author": "Weerapat Chulaket",
-  "license": "ISC",
+  "license": "MIT",
   "babel": {
     "presets": [
       "env",
