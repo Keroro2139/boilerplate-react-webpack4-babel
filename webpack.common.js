@@ -56,8 +56,13 @@ module.exports = {
         new webpack.HotModuleReplacementPlugin(),
         new HtmlWebpackPlugin({
             hash: true,
+<<<<<<< HEAD
             title: 'React Boilerplate',
             template: path.resolve('public/index.template.html'),
+=======
+            title: 'React Boilderplate',
+            template: path.resolve('src/index.template.html'),
+>>>>>>> 6c6fbcf088601068846481f2d233cecb469f3489
             filename: 'index.html',
             inject: 'body'
         }),
