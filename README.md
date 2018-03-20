@@ -53,7 +53,7 @@ $ npm i react-redux redux redux-thunk redux-promise redux-logger -s
 ### Install react-router-dom, redux-form, redux-saga, validator
 For route and library maganged about store in redux
 ```
-$ npm i -s react-router-dome
+$ npm i -s react-router-dom
 $ npm i -s redux-form
 $ npm i -s redux-saga
 $ npm i -s validator
