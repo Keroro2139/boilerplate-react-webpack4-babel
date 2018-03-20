@@ -6,7 +6,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
     entry: [
         'react-hot-loader/patch',
-        path.resolve('./dev/index.js')
+        path.resolve('./src/index.js')
     ],
     mode: 'development',
     devServer: {
@@ -49,15 +49,15 @@ module.exports = {
     },
     output: {
         filename: 'bundle.min.js',
-        path: path.resolve(__dirname, 'dist')
+        path: path.resolve(__dirname, 'build')
     },
     plugins: [
-        new CleanWebpackPlugin(['dist']),
+        new CleanWebpackPlugin(['build']),
         new webpack.HotModuleReplacementPlugin(),
         new HtmlWebpackPlugin({
             hash: true,
-            title: 'Google Maps',
-            template: path.resolve('src/index.template.html'),
+            title: 'React Boilerplate',
+            template: path.resolve('public/index.template.html'),
             filename: 'index.html',
             inject: 'body'
         }),
