@@ -21,7 +21,7 @@ const store = createStore(
 
 ReactDOM.render(
     <Provider store={store}>
-        <AppContainer />
+        <App />
     </Provider>,
     document.querySelector('#root')
 )
