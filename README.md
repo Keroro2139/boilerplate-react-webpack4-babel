@@ -51,6 +51,7 @@ $ npm i -D react-hot-loader
 $ npm i react-redux redux redux-thunk redux-promise redux-logger -s
 ```
 ### Install react-router-dom, redux-form, redux-saga, validator
+For route and library maganged about store in redux
 ```
 $ npm i -s react-router-dome
 $ npm i -s redux-form
@@ -189,22 +190,7 @@ module.exports = merge(common, {
     ]
 });
 ```
-### Style.scss
-Structure
-```
-- dev
--- index.js
--- style.scss // <-- create style file here
-- node_modules
-- src
--- index.template.html
-- .babelrc
-- package.json
-- package-lock.json
-- webpack.common.js
-- webpack.dev.js
-- webpack.prod.js
-```
+
 Then **import './style.scss'** at *index.js* file.
   
 Installation boilerplate completed, Enjoy!!!
