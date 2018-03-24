@@ -21,8 +21,11 @@ module.exports = {
                 use: ['babel-loader']
             },
             {
-                test: /\.css$/,
-                use: ['style-loader', 'css-loader']
+                test: /\.(ttf|eot|woff|woff2)$/,
+                loader: "file-loader",
+                options: {
+                    name: "fonts/[name].[ext]",
+                },
             },
             {
                 test: /\.scss$/,
@@ -41,7 +44,7 @@ module.exports = {
             {
                 test: /\.(png|svg|jpg|gif)$/,
                 use: ['file-loader']
-            }
+            },
         ]
     },
     resolve: {
@@ -56,7 +59,7 @@ module.exports = {
         new webpack.HotModuleReplacementPlugin(),
         new HtmlWebpackPlugin({
             hash: true,
-            title: 'React Boilerplate',
+            title: 'My resume',
             template: path.resolve('public/index.template.html'),
             filename: 'index.html',
             inject: 'body'
